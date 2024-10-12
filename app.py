@@ -1,3 +1,9 @@
+from flask import Flask, render_template, jsonify, request
+import requests
+from datetime import datetime
+
+app = Flask(__name__)
+
 API_KEY = 'a22a79d767ec8ab056163d094e954646'
 
 @app.route('/')
